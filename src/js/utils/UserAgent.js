@@ -23,7 +23,8 @@
     'isIE11',
     'isEdge',
     'isChrome',
-    'isFirefox'
+    'isFirefox',
+    'isSafari'
   ];
 
   ns.UserAgent.version = (function () {
@@ -33,14 +34,16 @@
       return parseInt(/Chrome\/(\d+)/i.exec(ua)[1], 10);
     } else if (pskl.utils.UserAgent.isFirefox) {
       return parseInt(/Firefox\/(\d+)/i.exec(ua)[1], 10);
+    //} else if (pskl.utils.UserAgent.isSafari) {
+    //  return parseInt(/Safari/(\d+)/i.exec(ua)[1], 10);
+    } else {
+      return 1337;
     }
   })();
 
   ns.UserAgent.isUnsupported = function () {
     // Check that none of the supported UAs are set to true.
-    return ns.UserAgent.supportedUserAgents.every(function (uaTest) {
-      return !ns.UserAgent[uaTest];
-    });
+    return false; //PISKEL FOR ALL!
   };
 
   ns.UserAgent.getDisplayName = function () {
