@@ -5,6 +5,7 @@ Piskel
 
 Piskel is an easy-to-use sprite editor. It can be used to create game sprites, animations, pixel-art...
 It is the editor used in **[piskelapp.com](https://www.piskelapp.com)**.
+Piskel never supported mobile... until now! Piskel4All aims to finally give portable devices the justice they deserve.
 
 <img
   src="https://screenletstore.appspot.com/img/95aaa0f0-37a4-11e7-a652-7b8128ce3e3b.png"
@@ -40,7 +41,7 @@ Piskel supports the following browsers:
 
 ### Mobile/Tablets
 
-There is no support for mobile.
+Piskel4All provides basic support for mobile devices at the moment.
 
 ### Offline builds
 
