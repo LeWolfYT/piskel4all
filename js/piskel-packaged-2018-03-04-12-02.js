@@ -12204,9 +12204,7 @@ if (!Uint32Array.prototype.fill) {
 
   ns.UserAgent.isUnsupported = function () {
     // Check that none of the supported UAs are set to true.
-    return ns.UserAgent.supportedUserAgents.every(function (uaTest) {
-      return !ns.UserAgent[uaTest];
-    });
+    return false;
   };
 
   ns.UserAgent.getDisplayName = function () {
