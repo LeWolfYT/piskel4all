@@ -27013,6 +27013,7 @@ return Q;
     this.cheatsheetEl = document.getElementById('cheatsheetContainer');
 	if (check_if_this_is_mobile()) {
 		this.cheatsheetEL.style.visible = "hidden"; //we don't want a cheat sheet for shortcuts we can't use
+		document.getElementById('cheatsheet-link').style.visible = "hidden";
 	}
     this.eventTrapInput = document.getElementById('cheatsheetEventTrap');
 
